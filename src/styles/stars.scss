@@ -1,11 +1,11 @@
 .stars {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: $star-gap;
 
   &__star {
-    width: 16px;
-    height: 16px;
+    width: $star-size;
+    height: $star-size;
     display: block;
     background: url('../images/star.svg') center/contain no-repeat;
   }

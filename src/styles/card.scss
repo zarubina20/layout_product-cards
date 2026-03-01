@@ -1,11 +1,11 @@
 .card {
-  width: 200px;
+  width: $card-width;
   padding: 32px 16px 16px;
-  border: 1px solid #f3f3f3;
-  border-radius: 5px;
+  border: $card-border;
+  border-radius: $card-radius;
 
   font-family: $font-family;
-  color: #060b35;
+  color: $color-text;
 
   &__image {
     width: 100%;
@@ -20,13 +20,14 @@
     font-size: 12px;
     line-height: 18px;
     font-weight: 500;
+    color: $color-text;
   }
 
   &__code {
     margin: 0 0 16px;
     font-size: 10px;
     line-height: 14px;
-    color: #616070;
+    color: $color-muted;
   }
 
   &__review {
@@ -40,7 +41,7 @@
     margin: 0;
     font-size: 10px;
     line-height: 14px;
-    color: #616070;
+    color: $color-muted;
   }
 
   &__price {
@@ -53,13 +54,14 @@
   &__price-label {
     font-size: 12px;
     line-height: 18px;
-    color: #616070;
+    color: $color-muted;
   }
 
   &__price-value {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
+    color: $color-text;
   }
 
   &__buy {
@@ -67,11 +69,11 @@
     height: 40px;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    background: #00acdc;
-    border: 1px solid #00acdc;
+    background-color: $link-bg;
+    border: 1px solid $link-bg;
     border-radius: 5px;
 
     font-size: 14px;
@@ -79,11 +81,16 @@
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff;
+    color: $link-text;
 
     &:hover {
-      background: #fff;
-      color: #00acdc;
+      background-color: $page-bg;
+      color: $link-bg;
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
     }
   }
 }
